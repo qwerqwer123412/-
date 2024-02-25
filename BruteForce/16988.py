@@ -66,7 +66,7 @@ def check(group_num):
     return True
 
 
-answer = 0
+answer2 = 0
 for case in cases:
     # 검은 바둑알 두기
     for x, y in case:
@@ -76,9 +76,9 @@ for case in cases:
     for g_num in white_group:
         if check(white_group[g_num]):
             result += len(white_group[g_num])
-    answer = max(result, answer)
+    answer2 = max(result, answer2)
     # 검은 바둑알 압수
     for x, y in case:
         board[x][y] = 0
 
-print(answer)
+print(answer2)
